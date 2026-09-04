@@ -12,11 +12,11 @@ AI를 활용해 자기소개 웹페이지를 만들고, Git/GitHub 버전 관리
 
 | 구분 | URL |
 |---|---|
-| Vercel Deploy | https://XXXXX.vercel.app |
-| index.html | https://XXXXX.vercel.app/index.html |
-| index2.html | https://XXXXX.vercel.app/index2.html |
+| Vercel Deploy | https://assign01-c02-22500349.vercel.app/ |
+| index.html | https://assign01-c02-22500349.vercel.app/index.html |
+| index2.html | https://assign01-c02-22500349.vercel.app/index2.html |
 
-> Vercel 배포 완료 후 `XXXXX` 부분을 실제 주소로 교체하세요.
+> 루트(`/`) 접속 시 `vercel.json` 설정으로 index2.html로 이동합니다.
 
 ---
 
@@ -33,10 +33,11 @@ VS Code → HTML → Git → GitHub → Vercel → Web
 ```
 
 ### Code Modification — index.html → index2.html 주요 변경
-- **글꼴·배경색 변경**: 밝은 파랑 테마 → 어두운(다크) 테마 + monospace 글꼴
-- **헤더 색상 변경**: 단색 파랑 → 그린-블루 그라디언트
-- **자기소개 텍스트 수정**: About Me 문구를 새 내용으로 교체
-- **HTML 요소·외부 링크 추가**: `<h3>`와 References 섹션을 새로 만들고 MDN·Vercel 등 외부 사이트 링크 추가
+- **색상 테마 변경**: 라이트 테마 → 다크 테마 (배경 `#f7f8fa`→`#0f1115`, 카드 `#ffffff`→`#1a1d24`)
+- **강조색 변경**: 보라 `#6c5ce7` → 초록 `#00b894` (제목·링크·목록 점)
+- **본문 가독성 개선**: 카드 본문·목록 글자색을 흰색(`#ffffff`)으로 바꿔 다크 배경 대비 확보
+- **새 HTML 요소 추가**: "My GitHub" 카드 섹션 추가
+- **외부 링크 추가**: 본인 GitHub(`github.com/22500349`) 링크 연결
 
 ### Problem & Solution
 - **문제**: 로컬에서 만든 파일을 GitHub에 올려도 웹에서 확인할 방법이 없었습니다.
