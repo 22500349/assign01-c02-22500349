@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>선승범 | Profile</title>
+  <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <style>
+    :root {
+      --bg: #0f1115;      
+      --surface: #1a1d24;
+      --border: #ececf1;
+      --text: #e8e8ea;
+      --text-sub: #6b7280;
+      --accent: #00b894;
+      --accent-soft: #f1effc; 
+      --radius: 18px;
+      --shadow: 0 1px 2px rgba(17, 17, 26, 0.04), 0 4px 16px rgba(17, 17, 26, 0.05);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR",
+                   -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 48px 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 600px; margin: 0 auto; }
+
+    /* 헤더 — 큰 원형 아바타 중앙 앵커 */
+    .profile {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .profile img {
+      width: 112px;
+      height: 112px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 3px solid var(--surface);
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+    }
+    .profile h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .profile .sub {
+      margin-top: 6px;
+      font-size: 14px;
+      color: var(--text-sub);
+    }
+
+    /* 카드 섹션 */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px 26px;
+      margin-bottom: 16px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 2px 4px rgba(17, 17, 26, 0.05), 0 10px 28px rgba(17, 17, 26, 0.08);
+    }
+    .card h2 {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 12px;
+    }
+    .card h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 10px 0 8px;
+    }
+    .card p { font-size: 15px; color: #33343a; }
+
+    ul { list-style: none; }
+    li {
+      font-size: 15px;
+      padding: 7px 0 7px 20px;
+      position: relative;
+      color: #33343a;
+    }
+    li + li { border-top: 1px solid var(--border); }
+    li::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 15px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    strong { color: var(--accent); font-weight: 600; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover { text-decoration: underline; }
+
+    .footer {
+      text-align: center;
+      padding: 24px 0 4px;
+      font-size: 12px;
+      color: var(--text-sub);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="profile">
+      <img src="https://api.dicebear.com/9.x/initials/svg?seed=SB&backgroundColor=6c5ce7&textColor=ffffff" alt="프로필 이미지" />
+      <h1>선승범 (SeungBeom)</h1>
+      <p class="sub">22500349 · AI컴퓨터 전자 (전산심화)</p>
+    </div>
+
+    <div class="card">
+      <h2>About Me</h2>
+      <p>코드로 아이디어를 현실로 만드는 걸 좋아하는 개발자 지망생입니다.
+         프론트엔드부터 백엔드, 그리고 게임까지 폭넓게 만들어보며 성장하고 있습니다.
+         지금은 Git·GitHub·Vercel로 이어지는 개발 배포 흐름을 익히는 중입니다.</p>
+    </div>
+
+    <div class="card">
+      <h2>관심 분야 · 취미</h2>
+      <ul>
+        <li>웹 개발 · 게임 개발</li>
+        <li>게임 플레이</li>
+        <li>소설 읽기</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>이번 학기 목표</h2>
+      <ul>
+        <li>프론트엔드 · 백엔드를 아우르는 웹 서비스 개발</li>
+        <li>Git / GitHub 협업과 배포 흐름 익히기</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>만들어보고 싶은 프로젝트</h2>
+      <p>회원가입 후 사용자 정보가 <strong>DB에 저장·관리</strong>되는 웹 페이지를 직접 구현해보고 싶습니다.</p>
+    </div>
+
+    <div class="card">
+      <h2>References</h2>
+      <h3>공부에 참고하는 사이트</h3>
+      <ul>
+        <li><a href="https://developer.mozilla.org/ko/" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://vercel.com/" target="_blank">Vercel</a></li>
+        <li><a href="https://github.com/2026-2-OSS/assign01-c02-22500349" target="_blank">GitHub Repository</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>My GitHub</h2>
+      <ul>
+        <li><a href="https://github.com/22500349" target="_blank">내 GitHub</a></li>
+      </ul>
+    </div>
+
+    <div class="footer">© 2026 SeungBeom Sun</div>
+  </div>
+</body>
+</html>
