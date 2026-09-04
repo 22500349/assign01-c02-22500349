@@ -40,8 +40,8 @@ VS Code → HTML → Git → GitHub → Vercel → Web
 - **외부 링크 추가**: 본인 GitHub(`github.com/22500349`) 링크 연결
 
 ### Problem & Solution
-- **문제**: 로컬에서 만든 파일을 GitHub에 올려도 웹에서 확인할 방법이 없었습니다.
-- **해결**: GitHub Repository를 Vercel에 Import하여 배포하니 URL로 접속 가능해졌고, 이후 Push할 때마다 자동 배포되도록 연결했습니다.
+- **문제**: index가 있는 상태에서 index2를 만들면 일반적으로는 index2를 자동으로 배포하지 못했습니다.
+- **해결**: AI를 통해 문제를 제시하고, Vercel 배포를 제어하는 JSON 파일(`vercel.json`)을 수정해 문제를 해결하였습니다.
 
 ### Reflection
 - Git이 단순 백업이 아니라 "변경 이력을 시간순으로 관리하는 도구"라는 점을 새롭게 알게 되었습니다.
